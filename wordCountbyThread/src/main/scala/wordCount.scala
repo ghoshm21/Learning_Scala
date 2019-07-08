@@ -21,9 +21,9 @@ object wordCount extends App{
     //to replace all the punctuations
     val regex = "[//.//?//,//-]".r
     // initialize count val
-    var count: Int = 0
+    var count: Int = 1
     //the file input dir
-    val inputDir = "/root/Documents/books"
+    val inputDir = "/home/sandipan/Documents/wiki_articles"
     //get all the files under this dir
     val files = getFileList(inputDir)
     //loop into the individual file
@@ -35,13 +35,13 @@ object wordCount extends App{
       for (line <- bufferedSource.getLines()) {
 
         val cleanLine = regex.replaceAllIn(line, "").split(" +").toList
-
+        // taking more time and space in memory
         for (word <- cleanLine) {
           //check if the word exist then increase the count, else insert the word
           if (wordCountMap.contains(word)) {
             wordCountMap += (word.toString -> (wordCountMap(word) + 1))
           } else {
-            wordCountMap += (word.toString -> 0)
+            wordCountMap += (word.toString -> 1)
           }
 
         }

@@ -4,7 +4,7 @@
 		module="wordcountbythread_2.13"
 		revision="0.1"
 		status="integration"
-		publication="20190619235731"
+		publication="20190630095144"
 	>
 		<description>
 		wordCountbyThread

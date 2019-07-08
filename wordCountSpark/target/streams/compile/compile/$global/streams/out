@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sandipan/IdeaProjects/wordCountSpark/src/main/scala/wordCountSpark.scala:22:51: too many arguments for method cache: ()org.apache.spark.rdd.RDD[String][0m
+[0m[[0m[31merror[0m] [0m[0m    val textData = spark.textFile(inputData).cache(StorageLevel.MEMORY_AND_DISK)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
