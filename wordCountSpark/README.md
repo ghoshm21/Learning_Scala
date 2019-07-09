@@ -14,3 +14,6 @@
 6. also learned that re-preparation is not a good idea for extensive data as this bring the data to the driver
 7. used regex to clean the words
 
+#Usage
+time spark-submit --class wordCountSpark --master local[*] /home/sandipan/IdeaProjects/wordCountSpark/target/scala-2.11/wordcountspark_2.11-0.1.jar "/home/sandipan/Documents/wiki_articles/singleLargeData/wiki_eng_articles.txt.bz2"
+
